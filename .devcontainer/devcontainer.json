@@ -1,0 +1,44 @@
+{
+  "name": "Template",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "remoteEnv": {
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.autoSave": "onFocusChange",
+        "debug.inlineValues": "on",
+        "debug.openDebug": "openOnSessionStart",
+        "debug.internalConsoleOptions": "openOnSessionStart",
+        "editor.dragAndDrop": false,
+        "editor.renderWhitespace": "all",
+        "editor.showFoldingControls": "always",
+        "editor.minimap.maxColumn": 40,
+        "editor.minimap.showSlider": "always",
+        "editor.minimap.size": "fit",
+        "editor.formatOnPaste": true,
+        "files.insertFinalNewline": true,
+        "files.eol": "\n",
+        "workbench.iconTheme": "material-icon-theme",
+        "files.trimTrailingWhitespace": true,
+        "extensions.verifySignature": false,
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "omnisharp.enableEditorConfigSupport": true
+      },
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-ja",
+        "PKief.material-icon-theme",
+        "EditorConfig.EditorConfig",
+        "ms-dotnettools.csdevkit",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "ionutvmi.path-autocomplete"
+      ]
+    }
+  },
+  "remoteUser": "root"
+}

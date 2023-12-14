@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug",
+      "type": "coreclr",
+      "request": "attach",
+      "processName": "/workspace/Template/bin/Debug/net8.0/template",
+      "preLaunchTask": "dotnet watch",
+      "postDebugTask": "dotnet terminate",
+      "justMyCode": true,
+    }
+  ]
+}

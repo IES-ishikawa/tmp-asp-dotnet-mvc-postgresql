@@ -7,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<TemplateContext>(opt =>
 {
-    Console.WriteLine(builder.Configuration.GetConnectionString("TemplateContext"));
     opt.UseNpgsql(builder.Configuration.GetConnectionString("TemplateContext"));
 });
 
